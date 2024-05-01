@@ -1,69 +1,225 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Haigh Portal</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Haigh</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/892c32617c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<section class="ftco-section">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-md-6 text-center mb-5">
+<div id="header">
+    <div class="parallax">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id = "sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>James Philip Haigh</p>
+                <h1>I'm a <span class="auto-type"></span></h1>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
-<div class="row justify-content-center">
-<div class="col-md-12 col-lg-10">
-<div class="wrap d-md-flex">
-<div class="img" style="background-image: url(images/bg-1.jpg);">
-</div>
-<div class="login-wrap p-4 p-md-5">
-<div class="d-flex">
-<div class="w-100">
-<h3 class="mb-4">Log in</h3>
-</div>
-<div class="w-100">
-<p class="social-media d-flex justify-content-end">
-</p>
-</div>
-</div>
-<form action="#" class="signin-form">
-<div class="form-group mb-3">
-<label class="label" for="name">Username</label>
-<input type="text" class="form-control" placeholder="Username" required>
-</div>
-<div class="form-group mb-3">
-<label class="label" for="password">Password</label>
-<input type="password" class="form-control" placeholder="Password" required>
-</div>
-<div class="form-group">
-<button type="submit" class="form-control btn btn-primary rounded submit px-3" onclick="location.href = 'Home.html';">Sign In</button>
 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi there! My name is James Haigh, and I'm a Business Analyst based in Leeds. I have 2 years of experience in Business Analysis, and I specialize in Application Development and Web Design. I am passionate about analysing business needs, and I love to help my clients achieve their goals.
+
+                    Although my career has been short thus far, I have gained extensive experience in Programming (C#, Python, .NET Framework). I take pride in my ability to solve problems and assess business needs in a quick and efficent manner.
+                    
+                    When I'm not working, you can find me watching films, playing games or spending time with my Family and Friends. I am a firm believer in work-life balance, and I believe that pursuing your passions outside of work is just as important as excelling in your career.
+                    
+                    I am always looking for new opportunities to collaborate with like-minded individuals and companies, so if you're interested in working together, please don't hesitate to get in touch! Please see the contact section below to get in contact!. Thank you for taking the time to visit my website, and I look forward to hearing from you!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designer Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Designing Web/App Interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Feb 2022 to Present - Cutwel Ltd</span><br>I am currently working as a IT Business Analyst at Cutwel Ltd. Where I am a key member of the team when it comes to delvering change in terms of projects and developments. I continue to develop applications where neccessary and would like to improve the business day to day by continuing to develop my knowledge in these areas. I am also undertaking a Level 4 Business Analysis course on the job.</li>
+                        <li><span>Mar 2022 to Feb 2023 - Cutwel Ltd</span><br>I worked as a Junior Business Analyst at Cutwel Ltd. where i learnt how to map processes, eliminate efficency wastage and continue to support members of staff through the building with my problem solving skills as well as by deploying various projects within the company, during which time I begun application development, creating apps to improve efficeny around the workplace as well as providing, never before seen changes to the business.</li>
+                        <li><span>Aug 2020 to Jul 2022- Cutwel Ltd</span><br>I worked as a Support Desk Analyst at Cutwel Ltd. where I learnt how to manage a support desk as a first line support technician, this role allowed me to improve my communication skills with staff and increased my problem solving skills, whist doing this role, I was studying for my Level 3 Infrastructure Technician Course, which i passed in 2022.</li>
+                        <li><span>Dec 2019 to Jul 2021 - Schuh</span><br>I worked as a Sales Assistant at schuh where I learnt valuable skills such as teamwork, communication with customers and stockroom management. My main role at schuh was that of a stockroom staff member though from time to time I would help customers with their shopping.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>Level 3 Infrastructure Technician</li>
+                        <li><span>2019</span><br>A-Level Computer Science</li>
+                        <li><span>2018</span><br>9 GCSES</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="form-group d-md-flex">
-<div class="w-50 text-left">
-<label class="checkbox-wrap checkbox-primary mb-0">Remember Me
-<input type="checkbox" checked>
-<span class="checkmark"></span>
-</label>
+
+
+<div id="services">
+     <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet spien quis.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Desgin</h2>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet spien quis.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet spien quis.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+     </div>
 </div>
-<div class="w-50 text-md-right">
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Merlin Account Unlocker</h3>
+                    <p>The app allows you to enter your usernumber and log you out of merlin remotely.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Pre-Visit Application</h3>
+                    <p>The app allows you to wrap up visits and import them into a ERP system remotely.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Quote Excel Exporter</h3>
+                    <p>The app allows you to export quotes from merlin into an excel.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
 </div>
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>jameshaigh.ai@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>07979545119</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/james.haigh.7967/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/jameshaigh256"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/jameshaigh02"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © James Haigh. Made with <i class="fa-solid fa-heart"></i> by James Haigh.</p>
+    </div>
 </div>
-</form>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7c865debe8487583","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}' crossorigin="anonymous"></script>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    window.addEventListener("scroll", function () {
+  const parallax = document.querySelector(".parallax");
+  let offset = window.pageYOffset;
+  parallax.style.backgroundPositionY = offset * 0.7 + "px";
+});
+</script>
+
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed(".auto-type", {
+        strings: ["Business Analyst","Web Developer","App Developer","IT Support Technician"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop:true
+    })
+
+</script>
 </body>
 </html>
